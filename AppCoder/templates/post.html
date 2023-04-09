@@ -1,0 +1,25 @@
+{% extends 'structure.html' %}
+{% load static %}
+
+{% block text_page %}
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">¡Bienvenido al registro de Posteos!</h1>
+            <p class="header-subtitle">¡Postea tus ideas y comparte con la comunidad! ¡La sección de comentarios está abierta para recibir tus aportes! ¡Únete a la conversación!.</p>
+        </div>
+    </header>
+    {% endblock text_page %}
+
+    {% block formulario %}
+    
+    <form action="{% url 'post' %}" method="POST">{% csrf_token %}
+        <div class="container" > 
+        {{miFormulario.as_p}}
+
+        <button type="sumbit"> Enviar</button>
+        <div>
+    </form>
+
+{% endblock formulario %}
+    

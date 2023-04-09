@@ -1,0 +1,26 @@
+{% extends 'structure.html' %}
+{% load static %}
+
+{% block text_page %}
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">¡Bienvenido al registro de Usuarios!</h1>
+            <p class="header-subtitle">¡Únete a nuestra comunidad! Regístrate hoy y disfruta de una experiencia personalizada. Es fácil y rápido, simplemente completa el formulario de registro y estarás listo para comenzar. ¡No te pierdas la oportunidad de ser parte de nuestra comunidad!.</p>
+        </div>
+    </header>
+    {% endblock text_page %}
+
+
+{% block formulario %}
+    
+    <form action="{% url 'user' %}" method="POST">{% csrf_token %}
+        <div class="container" > 
+        {{miFormulario.as_p}}
+
+        <button type="sumbit"> Enviar</button>
+        <div>
+    </form>
+
+{% endblock formulario %}
+    

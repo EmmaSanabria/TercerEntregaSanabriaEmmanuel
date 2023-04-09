@@ -1,0 +1,25 @@
+{% extends 'structure.html' %}
+{% load static %}
+
+{% block text_page %}
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">¡Bienvenido al registro de Grupos!</h1>
+            <p class="header-subtitle">¡Crea un grupo en nuestra comunidad! Accede a la sección de grupos, crea uno nuevo y comienza a invitar amigos. ¡Conéctate con personas que comparten tus intereses!..</p>
+        </div>
+    </header><!-- end of page header -->
+    {% endblock text_page %}
+
+    {% block formulario %}
+
+    <form action="{% url 'group' %}" method="POST">{% csrf_token %}
+        <div class="container" > 
+        {{miFormulario.as_p}}
+
+        <button type="sumbit"> Enviar</button>
+        <div>
+    </form>
+
+{% endblock formulario %}
+    

@@ -1,0 +1,28 @@
+{% extends 'structure.html' %}
+{% load static %}
+
+{% block text_page %}
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Bienvenido a la tercera pre-entrega</h1>
+            <p class="header-subtitle">¡Busca los posteos de un usuario en nuestra comunidad! Ingresa su nombre en la barra de búsqueda y encuentra todos sus posteos. ¡Regístrate hoy y comienza a utilizarlo!</p>
+        </div>
+    </header>
+    {% endblock text_page %}
+
+
+{% block formulario %}
+    
+    <form action="{% url 'searchPost' %}" method="GET">{% csrf_token %}
+    <div class="container" > 
+    <b style= "color: white;">Ingrese el nombre del usuario que desee ver el posteo:</b>
+
+       <p>Usuario:<input type="text" name= "comentario" id= "comentario"></p>
+
+        <button type="sumbit"> Buscar </button>
+    </div>
+    </form>
+
+{% endblock formulario %}
+    
