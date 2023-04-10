@@ -19,7 +19,7 @@ Esto iniciará un servidor local en tu equipo y podrás acceder a la interfaz we
 Desde la interfaz web, podrás registrarte como usuario, crear posteos y grupos. 
 También podrás utilizar la funcionalidad de búsqueda para encontrar posteos en la base de datos.
 
-Estructura del proyecto
+Estructura del proyecto.
 El proyecto está estructurado de la siguiente manera:
 
 manage.py: Archivo principal del proyecto de Django, utilizado para ejecutar comandos de gestión del proyecto (como iniciar el servidor o ejecutar migraciones).
