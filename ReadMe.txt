@@ -1,4 +1,5 @@
 Proyecto de registro y búsqueda de objetos en Django.
+
 Este es un proyecto desarrollado en Django que permite registrar tres objetos diferentes: 
 usuario, posteo y grupo. 
 La aplicación incluye una interfaz web que permite a los usuarios registrarse, crear posteos y unirse a grupos,
