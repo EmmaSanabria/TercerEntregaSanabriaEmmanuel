@@ -5,12 +5,12 @@ usuario, posteo y grupo.
 La aplicación incluye una interfaz web que permite a los usuarios registrarse, crear posteos y unirse a grupos,
 y también ofrece una funcionalidad de búsqueda para encontrar posteos en la base de datos.
 
-Requisitos
+Requisitos.
 Para ejecutar este proyecto, necesitarás tener instalado Python 3 y Django en tu equipo.
 Puedes instalar Django utilizando pip, el gestor de paquetes de Python, de la siguiente manera:
 "pip install django" desde la terminal.
 
-Uso del proyecto
+Uso del proyecto.
 Una vez que hayas configurado el proyecto, puedes ejecutarlo utilizando el siguiente comando:
 "python manage.py runserver"
 
